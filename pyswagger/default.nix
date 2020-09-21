@@ -39,8 +39,15 @@ buildPythonPackage rec {
 	tornado
 	httpretty
 	flask
-	webapp2
     ];
+
+    checkInputs = [
+	pytest
+    ];
+
+    checkPhase = ''
+	py.test -k '*' pyswagger/tests
+    '';
 
     meta = with lib; {
         description = "An OpenAPI (fka Swagger) client & converter in python, which is type-safe, dynamic, spec-compliant.";
