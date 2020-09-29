@@ -12,7 +12,7 @@ buildGoPackage rec {
     owner = "hashicorp";
     repo = pname;
     inherit rev;
-    sha256 = "000ynhc4nm4mmjxx1jhq2kjbqshxvi5x8y482520j8gsyn40g6zc";
+    sha256 = "kdVy5NHgIxl0q2GBSGxfDEDXtxwPojjhjSc2nhFvipU=";
   };
 
   # ui:
