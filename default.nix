@@ -10,4 +10,5 @@ self: super:
 	nixops_plugins = import ./nixops;
 	calico = super.callPackage ./calico/calico.nix {};
 	calico-ipam = super.callPackage ./calico/calico-ipam.nix {};
+	cni = super.callPackage ./cni {};
 }
