@@ -6,6 +6,7 @@ in
   nixops.withPlugins (
     ps: [
       ps.nixops-virtd
+      ps.nixopsvbox
     ]
   )
 )

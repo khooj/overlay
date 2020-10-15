@@ -8,6 +8,7 @@ authors = ["adisbladis <adisbladis@gmail.com>", "typetetris <ericwolf42@gmail.co
 python = "^3.7"
 nixops = {git = "https://github.com/nixos/nixops.git", rev = "master"}
 nixops-virtd = {git = "https://github.com/nix-community/nixops-libvirtd", rev = "master"}
+nixopsvbox = {git = "https://github.com/nix-community/nixops-vbox", rev = "master"}
 
 [tool.poetry.dev-dependencies]
 
