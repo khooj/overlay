@@ -3,7 +3,7 @@
 bundlerEnv {
   inherit ruby;
 
-  pname = "fluentd-cloudwatch";
+  pname = "fluentd";
   gemdir = ./.;
 
   passthru.updateScript = bundlerUpdateScript "fluentd";
