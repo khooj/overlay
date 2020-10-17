@@ -212,6 +212,17 @@
     };
     version = "0.15.4";
   };
+  faraday_middleware-aws-sigv4 = {
+    dependencies = ["aws-sigv4" "faraday"];
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "1gk2qakcvvbgfvvfd8cgf13sligv5mp816ykmra9llqmbfym8ikl";
+      type = "gem";
+    };
+    version = "0.3.0";
+  };
   fluent-config-regexp-type = {
     dependencies = ["fluentd"];
     groups = ["default"];
@@ -222,6 +233,17 @@
       type = "gem";
     };
     version = "1.0.0";
+  };
+  fluent-plugin-aws-elasticsearch-service = {
+    dependencies = ["aws-sdk-core" "faraday_middleware-aws-sigv4" "fluent-plugin-elasticsearch" "fluentd"];
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "0fhpyz3b035y8m6wc2j3rr0ryfv3f297kk352rz74zh3qj7fgjyq";
+      type = "gem";
+    };
+    version = "2.4.0";
   };
   fluent-plugin-cloudwatch-logs = {
     dependencies = ["aws-sdk-cloudwatchlogs" "fluentd"];

@@ -12,5 +12,5 @@ self: super:
 	calico-ipam = super.callPackage ./calico/calico-ipam.nix {};
 	calicoctl = super.callPackage ./calico/calicoctl.nix {};
 	cni = super.callPackage ./cni {};
-	fluentd-cloudwatch = super.callPackage ./fluentd-cloudwatch {};
+	fluentd-custom = super.callPackage ./fluentd-custom {};
 }
