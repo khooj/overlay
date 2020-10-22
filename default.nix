@@ -14,4 +14,5 @@ self: super:
 	cni = super.callPackage ./cni {};
 	fluentd-custom = super.callPackage ./fluentd-custom {};
 	cilium = super.callPackage ./cilium {};
+	cilium-cni = super.callPackage ./cilium-cni {};
 }
