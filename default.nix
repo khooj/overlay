@@ -13,4 +13,5 @@ self: super:
 	calicoctl = super.callPackage ./calico/calicoctl.nix {};
 	cni = super.callPackage ./cni {};
 	fluentd-custom = super.callPackage ./fluentd-custom {};
+	cilium = super.callPackage ./cilium {};
 }
