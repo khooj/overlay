@@ -1,0 +1,4 @@
+source 'https://rubygems.org'
+
+gem 'logstash-core'
+gem 'logstash-output-amazon_es'
