@@ -17,4 +17,5 @@ self: super:
 	cilium-cni = super.callPackage ./cilium-cni {};
 	jruby-openssl = super.callPackage ./jruby-openssl {};
 	jruby-openssl_0_9_13 = super.callPackage ./jruby-openssl/0.9.13.nix {};
+	aws-es-proxy = super.callPackage ./aws-es-proxy {};
 }
