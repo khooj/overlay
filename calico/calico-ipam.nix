@@ -5,6 +5,6 @@ stdenv.mkDerivation {
   builder = ./builder.sh;
   src = builtins.fetchurl {
     url = "https://github.com/projectcalico/cni-plugin/releases/download/v3.14.0/calico-ipam-amd64";
-    sha256 = lib.fakeSha256;
+    sha256 = "sha256:18dv1k385iqwdv14sqlxh5vjw8djbzq7fi884ymnfaq6hxk41b3k";
   };
 }
