@@ -11,7 +11,7 @@ self: super:
 	calico = super.callPackage ./calico/calico.nix {};
 	calico-ipam = super.callPackage ./calico/calico-ipam.nix {};
 	calicoctl = super.callPackage ./calico/calicoctl.nix {};
-	cni = super.callPackage ./cni {};
+	custom-cni = super.callPackage ./cni {};
 	fluentd-custom = super.callPackage ./fluentd-custom {};
 	cilium = super.callPackage ./cilium {};
 	jruby-openssl = super.callPackage ./jruby-openssl {};

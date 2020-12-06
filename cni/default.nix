@@ -1,11 +1,16 @@
-{ stdenv, lib }:
-stdenv.mkDerivation {
+{ buildGoPackage, fetchFromGitHub, lib }:
+buildGoPackage rec {
   pname = "cni";
-  version = "0.8.6";
-  builder = ./builder.sh;
-  src = builtins.fetchurl {
-    url =
-      "https://github.com/containernetworking/plugins/releases/download/v0.8.6/cni-plugins-linux-amd64-v0.8.6.tgz";
-    sha256 = "sha256:1xdjv4pw2mi591c7dr578wklwprnpfwyvn28gslczv9fpg6vykwr";
+  version = "0.8.0";
+  goPackagePath = "github.com/containernetworking/cni";
+  src = fetchFromGitHub {
+    owner = "containernetworking";
+    repo = "cni";
+    rev = "v${version}";
+    sha256 = "sha256-PL4se4cGQ2mUWe5wujfpMidOtiezMTE0PuweHGFLJZo=";
+  };
+
+  meta = with lib; {
+    platforms = [ "x86_64-linux" "aarch64-linux" ];
   };
 }
